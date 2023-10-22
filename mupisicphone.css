@@ -1,0 +1,17 @@
+.navbar{
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.intro::before{
+    height: 63%;
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(345px,1fr));
+}
+img{
+    height: 200px;
+    width: 200px;
+    margin: 25px 70px;
+}

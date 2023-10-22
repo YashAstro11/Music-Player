@@ -1,0 +1,86 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(128, 128, 128);
+    top: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.navbar span:hover {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background-color: #375fb6;
+    border-radius: 10px;
+
+}
+.navbar span a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.item {
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: #7c4a41;
+}
+
+.item:hover {
+    background-color: #a17676;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin: 25px 60px;
+}
+audio{
+    margin: 10px;
+}
+
+.intro {
+    display: grid;
+    justify-content: center;
+    background-color: #b7bfc7;
+    margin: 40px;
+}
+
+.intro::before {
+    content: "";
+    background: url('background.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 230px;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+}
+
+div h2 {
+    text-align: center;
+}
